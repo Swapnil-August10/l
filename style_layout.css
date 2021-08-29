@@ -1,0 +1,65 @@
+html,body{
+    height: 100%;
+    width:100%;
+    margin:auto 0;
+}
+.main-nav{display: flex;
+    flex-wrap: wrap;
+    height: 12vh;
+    background-color: green;
+    margin: 0;
+}
+
+li{
+    padding-left:  30px;
+    padding: right 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    list-style:none;
+}
+a{  
+    color:white;
+    text-decoration: none;
+    font-size: 6mm;
+    text-transform:capitalize;
+}
+.push{
+    margin-left: auto;
+}
+/*--the below code is for flexibility if screen size is below 600 px*/
+@media only screen and (max-width: 600px) {
+    a{
+        font-size: 5mm;
+    }
+li{padding-top: 15px;
+   padding-left: 3px;
+   padding-right: 0px;} 
+.left{padding-inline-start: 0vw;}
+}
+.cover{
+    display: flex;
+    height: 43vh;          /*55% of screen size*/
+    background-color: tomato;
+    font-size:8mm;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: capitalize;
+}
+.project-grid{
+    height: 40vh;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1 fr;
+    background-color: rgb(49, 109, 221);
+}
+img{
+    width:10vh ; height: 13vh; padding: 10px;
+}
+.footing{
+    background-color:darkkhaki;
+    color:teal;
+    text-align: center;
+    text-transform: capitalize;
+    height: 5vh;
+}
